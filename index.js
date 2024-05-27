@@ -1,5 +1,4 @@
 
-
 const express = require("express");
 const app = express();
 
@@ -10,7 +9,7 @@ const { getJuegos, getJuegosById } = require("./controller/juegos-controller");
 //-------------------------------------
 
 
-app.get("/", getJuegos);
+app.get("/juegos", getJuegos);
 
 app.get("/:id", getJuegosById)
 
