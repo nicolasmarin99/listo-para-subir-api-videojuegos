@@ -5,7 +5,7 @@ const getJuegos = (req = request, res = response) => {
     return res.json({
         ok: true,
         statusCode: 200,
-        Juegos
+        juegos
     });
 }
 
