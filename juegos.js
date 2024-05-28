@@ -1,4 +1,7 @@
-const juegos = [
+
+'use strict';
+
+module.exports = [
     {
         "id": "1",
         "name": "Hollow Knight",
@@ -64,6 +67,4 @@ const juegos = [
     }
 ];
 
-module.exports = {
-    juegos
-}
+
