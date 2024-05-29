@@ -3,7 +3,7 @@ const app = express();
 const port = 3001;
 
 const { getJuegos } = require('./controller/get-Juegos.js');
-const { getJuegosID } = require('./controller/get.juegosById.js');
+const { getJuegosByID } = require('./controller/get.juegosById.js');
 
 app.all('*', function (req, res, next) {
     res.set('Access-Control-Allow-Origin', '*');
@@ -12,7 +12,7 @@ app.all('*', function (req, res, next) {
 
 app.get('/juegos', getJuegos)
 
-app.get('/byId/:id', getJuegosID)
+app.get('/byId/:id', getJuegosByID)
 
 app.listen(port, () => {
     console.log('Server running on port', port);
