@@ -2,7 +2,7 @@ const juegos = require("../juegos.js")
 const { request, response } = require("express")
 
 const getJuegosByID = (req = require, res = response) => {
-    let id = parseInt(req.params.id)
+    let id = (req.params.id)
 
     let juego = juegos.find((juego) => {
         return juego.id === id

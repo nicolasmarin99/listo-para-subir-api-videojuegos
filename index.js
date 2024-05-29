@@ -12,7 +12,7 @@ app.all('*', function (req, res, next) {
 
 app.get('/juegos', getJuegos)
 
-app.get('/byId/:id', getJuegosByID)
+app.get('/juego/:id', getJuegosByID)
 
 app.listen(port, () => {
     console.log('Server running on port', port);
